@@ -1,4 +1,6 @@
-# eleventy-plugin-files-minifier
+# eleventy-files-minifier
+
+This plugin was forked from https://github.com/benjaminrancourt/eleventy-plugin-files-minifier. Currently it includes modification to the code to address vulnerabilities introduced by html-minifier, which have been addressed by switiching out the dependency.
 
 This plugin allows you to automatically **minify** files when builting with **[Eleventy](https://www.11ty.dev/)**.
 It currently supports `css`, `html`, `json`, `xml`, `xsl` and `webmanifest` files.
@@ -10,23 +12,6 @@ Under the hood, this plugin use the following plugins to minify code:
 
 - [pretty-data](https://www.npmjs.com/package/pretty-data): `css`, `json`, `xml` and `webmanifest`
 - [html-minifier](https://www.npmjs.com/package/html-minifier): `html` and `xsl`
-
-## Installation
-
-Install the dependency with NPM:
-
-```shell script
-npm install @sherby/eleventy-plugin-files-minifier --save-dev
-```
-
-Open up your Eleventy config file (probably `.eleventy.js`) and use `addPlugin`:
-
-```javascript
-const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
-module.exports = (eleventyConfig) => {
-  eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
-};
-```
 
 ## Usage
 

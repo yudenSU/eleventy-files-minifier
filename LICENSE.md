@@ -1,5 +1,9 @@
 MIT License
 
+Copyright (c) 2025 Yuden Sae-Ueng
+
+This software includes code from the project "eleventy-plugin-files-minifier" by Benjamin Rancourt, which is licensed under the MIT License.
+
 Copyright (c) 2020 Benjamin Rancourt
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
